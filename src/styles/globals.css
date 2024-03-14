@@ -27,6 +27,14 @@
  
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
  
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -75,4 +83,25 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.font-primary {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title {
+  font-size: 120px;
+  color: hsla(232, 67%, 49%, 0.75);
+}
+
+
+.overlayed {
+  background-image: url("./../../public/bg.png");
+}
+
+.glass {
+  background: rgba(255, 214, 0, 0.75);
+  padding: 25px;
 }
