@@ -1,19 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-import '@/styles/globals.css'
-import { Button } from "@/components/ui/button"
+import '@/styles/globals.css';
+import { Button } from '@/components/ui/button';
 ---
 
-<Layout title='GeoBike.ai' meta='Sport app'>
-	<main class="overlayed h-dvh flex justify-center items-center flex-col gap-4">		
-		<div class="glass flex items-center gap-5">
-			<img class="w-32" src="GeoBikeLogo.svg" alt="GeoBike.ai" tabindex='0' />
-			<h1 class="font-primary title uppercase">GeoBike</h1>
-		</div>
-	  <p>Something really cool is coming soon.</p>
-		<a href="https://ignet.com.pl/">
-			<Button variant='outline'>Made with ❤️ by ignet</Button>
-		</a>
-	</main>
+<Layout title="GeoBike.ai" meta="Sport app">
+  <main class="overlayed font-side h-dvh flex justify-center items-center flex-col gap-4">
+    <div class="wrapper flex items-center flex-col rounded">
+      <div class="flex glass items-center gap-5">
+        <img class="w-32" src="GeoBikeLogo.svg" alt="GeoBike.ai" tabindex="0" />
+        <h1 class="font-primary title uppercase">GeoBike</h1>
+      </div>
+      <div class="flex flex-col gap-4 my-5">
+        <p>Something really cool is coming soon.</p>
+        <Button variant="default">
+          <a href="https://ignet.com.pl/">Made with ❤️ by Ignet</a>
+        </Button>
+      </div>
+    </div>
+  </main>
 </Layout>
